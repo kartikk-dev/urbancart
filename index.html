@@ -1,0 +1,661 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Shop everyday essentials, home products, electronics and festive gifts at UrbanCart.">
+
+    <meta name="theme-color" content="#351c20">
+
+    <title>UrbanCart | Diwali Festive Shopping</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script type="module" src="./js/app.js"></script>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- Fireworks Canvas -->
+    <canvas id="fireworks-canvas" aria-hidden="true"></canvas>
+
+    <!-- Website Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="#home" class="brand">
+                <span class="brand-mark">U</span>
+                <span class="brand-name">UrbanCart</span>
+            </a>
+
+            <nav class="main-navigation" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#shop">Shop</a>
+                <a href="#offers">Festive Offers</a>
+            </nav>
+
+            <div class="header-actions">
+
+                <button
+                    type="button"
+                    id="header-cart-button"
+                    class="header-cart"
+                    aria-label="Open shopping cart"
+                    aria-haspopup="dialog"
+                >
+                    <span>My Cart</span>
+                    <span id="header-cart-count">0</span>
+                </button>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <main id="main-content">
+
+        <!-- Festive Announcement -->
+        <section class="announcement-bar" aria-label="Festive announcement">
+            <p class="sr-only">
+                Diwali festive offer. Get up to 60 percent off on selected products.
+                Free delivery on orders of 500 rupees or above.
+            </p>
+
+            <div class="marquee-track" aria-hidden="true">
+                <div class="marquee-content" id="festive-marquee-text">
+                    <span>Diwali Festive Offer</span>
+                    <span>Get Up to 60% OFF</span>
+                    <span>Free Delivery on Orders ₹500 and Above</span>
+                    <span>Limited Time Offers</span>
+                    <span>Shop Your Favourite Products</span>
+                </div>
+
+                <div class="marquee-content" aria-hidden="true">
+                    <span>Diwali Festive Offer</span>
+                    <span>Get Up to 60% OFF</span>
+                    <span>Free Delivery on Orders ₹500 and Above</span>
+                    <span>Limited Time Offers</span>
+                    <span>Shop Your Favourite Products</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Homepage Hero -->
+        
+<section class="hero-section" id="home">
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <span class="eyebrow" id="hero-kicker">
+                THE DIWALI COLLECTION
+            </span>
+
+            <h1 id="hero-heading">
+                Celebrate Diwali.
+                <span id="hero-title-accent">
+                    Shop Something Special.
+                </span>
+            </h1>
+
+            <p id="hero-description">
+                Discover everyday essentials, exciting electronics,
+                home favourites and festive gifts at great prices.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="#shop" class="button button-primary">
+                    Explore the collection
+                </a>
+
+                <button
+                    type="button"
+                    id="burst-cracker-button"
+                    class="button button-festive"
+                >
+                    Burst Cracker
+                    <span aria-hidden="true">✦</span>
+                </button>
+
+            </div>
+
+            <p class="hero-offer" id="hero-offer">
+                Special festive prices on selected products.
+            </p>
+
+        </div>
+
+        <div class="hero-visual hero-image-container">
+            <img
+                src="./assets/images/diwali-hero.png"
+                alt="Happy Diwali greeting with festive gift boxes, flowers and illuminated diyas"
+                class="hero-image"
+                fetchpriority="high"
+            >
+        </div>
+
+    </div>
+</section>
+
+
+
+        <!-- Shopping Benefits -->
+        <section class="benefits-section">
+            <div class="container benefits-grid">
+
+                <article class="benefit-item">
+                    <span class="benefit-icon">↗</span>
+                    <div>
+                        <h3>Free Delivery</h3>
+                        <p>On orders ₹500 and above</p>
+                    </div>
+                </article>
+
+                <article class="benefit-item">
+                    <span class="benefit-icon">%</span>
+                    <div>
+                        <h3>Festive Deals</h3>
+                        <p>Save on selected products</p>
+                    </div>
+                </article>
+
+                <article class="benefit-item">
+                    <span class="benefit-icon">✓</span>
+                    <div>
+                        <h3>Cash on Delivery</h3>
+                        <p>Pay when your order arrives</p>
+                    </div>
+                </article>
+
+                <article class="benefit-item">
+                    <span class="benefit-icon">↺</span>
+                    <div>
+                        <h3>Easy Shopping</h3>
+                        <p>A simple shopping experience</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Product Catalogue -->
+        <section class="shop-section" id="shop">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">SHOP OUR COLLECTION</span>
+                        <h2>Find your favourites.</h2>
+                    </div>
+
+                    <p id="product-count">
+                        Explore our collection.
+                    </p>
+                </div>
+
+
+                <!-- Product Search and Filters -->
+                <div class="product-controls">
+
+                    <div class="search-control">
+                        <label for="product-search">
+                            Search products
+                        </label>
+
+                        <input
+                            type="search"
+                            id="product-search"
+                            placeholder="Search for a product..."
+                        >
+                    </div>
+
+                    <div class="filter-control">
+                        <label for="category-filter">
+                            Select category
+                        </label>
+
+                        <select id="category-filter">
+                            <option value="all">All categories</option>
+                        </select>
+                    </div>
+
+                    <div class="sort-control">
+                        <label for="sort-products">
+                            Sort products
+                        </label>
+
+                        <select id="sort-products">
+                            <option value="default">Featured products</option>
+                            <option value="low-high">Price: Low to High</option>
+                            <option value="high-low">Price: High to Low</option>
+                            <option value="name">Name: A to Z</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <!-- Product Cards -->
+                <div
+                    class="product-grid"
+                    id="product-grid"
+                    aria-live="polite"
+                >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Festive Offers -->
+        <section class="offers-section" id="offers">
+
+            <div class="container offers-content">
+
+                <div>
+                    <span class="eyebrow">A LITTLE FESTIVE MAGIC</span>
+
+                    <h2>Bring home the celebration.</h2>
+
+                    <p>
+                        Explore selected products and make your Diwali
+                        shopping more enjoyable.
+                    </p>
+                </div>
+
+                <a href="#shop" class="button button-light">
+                    Shop festive offers
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Shopping Cart Drawer -->
+    <dialog id="cart-drawer" class="cart-drawer">
+
+        <div class="drawer-content">
+
+            <div class="drawer-header">
+
+                <div>
+                    <span class="eyebrow">YOUR SELECTION</span>
+                    <h2>Your shopping cart</h2>
+                    <span id="cart-item-count">0 items</span>
+                </div>
+
+                <button
+                    type="button"
+                    id="close-cart-button"
+                    class="dialog-close"
+                    aria-label="Close shopping cart"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <!-- Empty Cart -->
+            <div id="cart-empty" class="cart-empty">
+
+                <div class="empty-cart-icon">🛒</div>
+
+                <h3>Your cart is empty.</h3>
+
+                <p>
+                    Discover something you would love to take home.
+                </p>
+
+                <button
+                    type="button"
+                    id="continue-shopping-button"
+                    class="button button-secondary"
+                >
+                    Continue shopping
+                </button>
+
+            </div>
+
+
+            <!-- Cart Products -->
+            <div id="cart-table-container" hidden>
+
+                <div class="cart-products-list">
+                    <table class="cart-table">
+
+                        <thead>
+                            <tr>
+                                <th scope="col">Product</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="cart-items">
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </div>
+
+
+            <!-- Order Summary -->
+            <aside class="cart-summary">
+
+                <h3>Order summary</h3>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <strong id="cart-subtotal">₹0.00</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <strong id="cart-delivery">₹0.00</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>Handling and GST</span>
+                    <strong id="cart-handling-gst">₹20.00</strong>
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-row summary-total">
+                    <strong>Grand total</strong>
+                    <strong id="cart-total">₹0.00</strong>
+                </div>
+
+                <p class="delivery-note" id="delivery-note">
+                    Free delivery on orders of ₹500 or above.
+                    A ₹30 delivery charge applies below ₹500.
+                </p>
+
+                <button
+                    type="button"
+                    id="checkout-button"
+                    class="button button-primary checkout-button"
+                    disabled
+                >
+                    Proceed to checkout
+                </button>
+
+                <p class="payment-note">
+                    Cash on Delivery available. No online payments.
+                </p>
+
+            </aside>
+
+        </div>
+
+    </dialog>
+
+
+    <!-- Customer Checkout -->
+    <dialog id="checkout-dialog" class="checkout-dialog">
+
+        <div class="checkout-content">
+
+            <div class="dialog-header">
+
+                <div>
+                    <span class="eyebrow">FINAL STEP</span>
+                    <h2>Delivery details</h2>
+                </div>
+
+                <button
+                    type="button"
+                    id="close-checkout-button"
+                    class="dialog-close"
+                    aria-label="Close checkout"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <!-- Order Preview -->
+            <div class="checkout-order-preview">
+
+                <h3>Your order</h3>
+
+                <div id="checkout-items">
+                </div>
+
+                <div class="checkout-totals">
+
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <strong id="checkout-subtotal">₹0.00</strong>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Delivery</span>
+                        <strong id="checkout-delivery">₹0.00</strong>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Handling and GST</span>
+                        <strong id="checkout-handling-gst">₹20.00</strong>
+                    </div>
+
+                    <div class="summary-divider"></div>
+
+                    <div class="summary-row summary-total">
+                        <strong>Grand total</strong>
+                        <strong id="checkout-total">₹0.00</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Customer Details Form -->
+            <form id="checkout-form">
+
+                <div class="form-group">
+                    <label for="customer-name">Full name</label>
+
+                    <input
+                        type="text"
+                        id="customer-name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        minlength="2"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="customer-address">Delivery address</label>
+
+                    <textarea
+                        id="customer-address"
+                        name="address"
+                        rows="3"
+                        placeholder="House number, street, area, city and PIN code"
+                        autocomplete="street-address"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="customer-phone">Phone number</label>
+
+                    <input
+                        type="tel"
+                        id="customer-phone"
+                        name="phone"
+                        placeholder="10-digit mobile number"
+                        inputmode="numeric"
+                        pattern="[6-9][0-9]{9}"
+                        maxlength="10"
+                        autocomplete="tel"
+                        required
+                    >
+                </div>
+
+                <div class="payment-method">
+
+                    <h3>Payment method</h3>
+
+                    <label class="payment-option">
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="cod"
+                            checked
+                        >
+
+                        <span>
+                            <strong>Cash on Delivery</strong>
+                            <small>Pay with cash when your order arrives.</small>
+                        </span>
+                    </label>
+
+                </div>
+
+                <button
+                    type="button"
+                    id="pay-with-cod-button"
+                    class="button button-primary checkout-button"
+                >
+                    Pay with COD
+                </button>
+
+            </form>
+
+
+            <!-- COD Confirmation Step -->
+            <section
+                id="cod-confirmation-step"
+                class="cod-confirmation-step"
+                hidden
+            >
+
+                <span class="eyebrow">ORDER CONFIRMATION</span>
+
+                <h3>Ready to place your order?</h3>
+
+                <div id="cod-customer-summary"></div>
+
+                <p>
+                    Your selected payment method is Cash on Delivery.
+                    No online payment is required.
+                </p>
+
+                <button
+                    type="button"
+                    id="place-order-button"
+                    class="button button-primary checkout-button"
+                >
+                    Place the order now
+                </button>
+
+                <button
+                    type="button"
+                    id="back-to-details-button"
+                    class="button button-secondary"
+                >
+                    Edit delivery details
+                </button>
+
+            </section>
+
+            <button
+                type="button"
+                id="close-preview-button"
+                class="checkout-cancel-button"
+            >
+                Cancel checkout
+            </button>
+
+        </div>
+
+    </dialog>
+
+
+    <!-- Order Success Screen -->
+    <section
+        id="order-success"
+        class="order-success"
+        aria-hidden="true"
+        aria-labelledby="success-heading"
+    >
+
+        <div class="success-content">
+
+            <div class="success-symbol">✓</div>
+
+            <span class="eyebrow">URBANCART ORDER UPDATE</span>
+
+            <h1 id="success-heading">
+                Order placed successfully!
+            </h1>
+
+            <p id="success-typing-text" aria-live="polite"></p>
+
+            <div class="delivery-estimate">
+                Your order will arrive within
+                <strong>2 days.</strong>
+            </div>
+
+            <p id="success-order-id"></p>
+
+            <button
+                type="button"
+                id="continue-shopping-success"
+                class="button button-primary"
+            >
+                Continue shopping
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Website Footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <a href="#home" class="brand">
+                <span class="brand-mark">U</span>
+                <span class="brand-name">UrbanCart</span>
+            </a>
+
+            <p>
+                Everyday essentials. Festive shopping.
+            </p>
+
+            <p class="copyright">
+                © 2026 UrbanCart. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

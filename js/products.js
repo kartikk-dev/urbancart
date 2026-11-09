@@ -1,0 +1,147 @@
+
+export const products = [
+    {
+        id: 1,
+        name: "UrbanBeat Bluetooth Speaker",
+        price: 1099,
+        originalPrice: 2199,
+        discount: 50,
+        category: "Electronics",
+        description: "Portable wireless speaker with rich, clear sound.",
+        image: "https://images.unsplash.com/photo-1549400854-b4300f444934?auto=format&fit=crop&w=900&q=80",
+        imageAlt: "Black portable Bluetooth speaker",
+        imageSource: "https://unsplash.com/photos/black-portable-speaker-eeEsmrTVH7Q"
+    },
+    {
+        id: 2,
+        name: "Diwali Chocolate Gift Box",
+        price: 349,
+        originalPrice: 499,
+        discount: 30,
+        category: "Food and Gifting",
+        description: "Assorted chocolates in an elegant festive gift box.",
+        image: "https://images.unsplash.com/photo-1687795097254-f019f9d7fd17?auto=format&fit=crop&w=900&q=80",
+        imageAlt: "Assorted chocolates arranged in a gift box",
+        imageSource: "https://unsplash.com/photos/a-box-of-assorted-chocolates-sitting-on-a-table-Kfdvn0cW9FE"
+    },
+    {
+        id: 3,
+        name: "FreshLock Container Set",
+        price: 299,
+        originalPrice: 499,
+        discount: 40,
+        category: "Kitchen",
+        description: "Food storage containers for organized kitchen storage.",
+        image: "https://images.unsplash.com/photo-1543352632-5a4b24e4d2a6?auto=format&fit=crop&w=900&q=80",
+        imageAlt: "Glass food preparation containers",
+        imageSource: "https://unsplash.com/photos/meal-prep-containers-with-healthy-food-lMcRyBx4G50"
+    },
+    {
+        id: 4,
+        name: "CleanHome Mop and Broom Set",
+        price: 599,
+        originalPrice: 999,
+        discount: 40,
+        category: "Cleaning",
+        description: "Everyday floor cleaning tools for your home.",
+        image: "https://images.unsplash.com/photo-1763689157745-928eb488eacf?auto=format&fit=crop&w=900&q=80",
+        imageAlt: "Broom and mop cleaning equipment",
+        imageSource: "https://unsplash.com/photos/broom-and-mop-cleaning-exterior-building-windows-oZXe-JsYhjo"
+    },
+    {
+        id: 5,
+        name: "SteelFlow Water Bottle",
+        price: 279,
+        originalPrice: 399,
+        discount: 30,
+        category: "Lifestyle",
+        description: "Reusable bottle for everyday hydration.",
+        image: "https://images.unsplash.com/photo-1561180796-dbaa5caf76e0?auto=format&fit=crop&w=900&q=80",
+        imageAlt: "Blue reusable water bottle",
+        imageSource: "https://unsplash.com/photos/blue-tumbler-mGAi85GnEtI"
+    },
+    {
+        id: 6,
+        name: "Nordic Ceramic Mug",
+        price: 249,
+        originalPrice: 399,
+        discount: 38,
+        category: "Kitchen",
+        description: "Minimal ceramic mug for coffee and tea.",
+        image: "https://images.unsplash.com/photo-1551098366-ce0d9231e861?auto=format&fit=crop&w=900&q=80",
+        imageAlt: "White ceramic coffee mug",
+        imageSource: "https://unsplash.com/photos/white-ceramic-mug-5VAATRNmbic"
+    },
+    {
+        id: 7,
+        name: "Everyday Canvas Tote",
+        price: 299,
+        originalPrice: 499,
+        discount: 40,
+        category: "Accessories",
+        description: "Reusable canvas bag for everyday essentials.",
+        image: "https://images.unsplash.com/photo-1772890753143-24991d807710?auto=format&fit=crop&w=900&q=80",
+        imageAlt: "Canvas shopping tote bag",
+        imageSource: "https://unsplash.com/photos/a-canvas-tote-bag-hangs-on-a-pole-WR4Ev2iSMt4"
+    },
+    {
+        id: 8,
+        name: "Field Notes Journal",
+        price: 199,
+        originalPrice: 499,
+        discount: 60,
+        category: "Stationery",
+        description: "Hardcover journal for writing and planning.",
+        image: "https://images.unsplash.com/photo-1709039549249-dd25168a8e63?auto=format&fit=crop&w=900&q=80",
+        imageAlt: "Notebook and pen",
+        imageSource: "https://unsplash.com/photos/a-notebook-with-a-pen-on-top-of-it-2eRNBtrRmDU"
+    },
+    {
+        id: 9,
+        name: "Arc Minimal Table Lamp",
+        price: 899,
+        originalPrice: 1499,
+        discount: 40,
+        category: "Home Decor",
+        description: "Decorative table lamp for home interiors.",
+        image: "https://images.unsplash.com/photo-1714942179079-4fddb552d41d?auto=format&fit=crop&w=900&q=80",
+        imageAlt: "Decorative table lamps",
+        imageSource: "https://unsplash.com/photos/a-couple-of-lamps-sitting-on-top-of-a-table-CJu5rBQg-xI"
+    },
+    {
+        id: 10,
+        name: "Studio Wireless Headphones",
+        price: 1499,
+        originalPrice: 2499,
+        discount: 40,
+        category: "Electronics",
+        description: "Wireless over-ear headphones for everyday listening.",
+        image: "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=900&q=80",
+        imageAlt: "Black wireless headphones",
+        imageSource: "https://unsplash.com/photos/black-wireless-headphones-between-apple-keyboard-and-apple-magic-mouse-on-white-surface-YDZPdqv3FcA"
+    },
+    {
+        id: 11,
+        name: "Festive LED String Lights",
+        price: 399,
+        originalPrice: 699,
+        discount: 43,
+        category: "Festive Decor",
+        description: "Decorative string lights for festive home decoration.",
+        image: "https://images.unsplash.com/photo-1574053897588-2677319c4a19?auto=format&fit=crop&w=900&q=80",
+        imageAlt: "Warm decorative string lights",
+        imageSource: "https://unsplash.com/photos/lighted-string-lights-MTPTDfqzSuU"
+    },
+    {
+        id: 12,
+        name: "Everyday Nonstick Pan",
+        price: 799,
+        originalPrice: 1299,
+        discount: 38,
+        category: "Kitchen",
+        description: "Nonstick frying pan for everyday cooking.",
+        image: "https://images.unsplash.com/photo-1592156328697-079f6ee0cfa5?auto=format&fit=crop&w=900&q=80",
+        imageAlt: "Black nonstick frying pan",
+        imageSource: "https://unsplash.com/photos/black-frying-pan-on-white-surface-Mv3JygH8eXQ"
+    }
+];
