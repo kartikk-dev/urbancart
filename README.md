@@ -356,6 +356,8 @@ The shopping cart persists through browser localStorage. A modal checkout previe
 
 **Project Links**
 
+- Live Website: [Visit the Live Website](https://urbancart-phi.vercel.app)
+
 - Source Code: https://github.com/kartikk-dev/urbancart
 - Live Application: To be added after deployment.
 
